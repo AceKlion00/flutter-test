@@ -6,6 +6,7 @@ import 'package:extra_staff/utils/constants.dart';
 import 'package:extra_staff/views/legal_agreements/hmrc_checklist_v.dart';
 import 'package:extra_staff/controllers/legal_agreements/hmrc_checklist_c.dart';
 import 'package:loading_overlay/loading_overlay.dart';
+import 'package:extra_staff/views/legal_agreements/agreements_v.dart';
 
 class HMRCChecklistStartView extends StatefulWidget {
   const HMRCChecklistStartView({Key? key}) : super(key: key);
@@ -18,6 +19,7 @@ class _HMRCChecklistStartViewState extends State<HMRCChecklistStartView> {
   final controller = HMRCCheckListController();
   bool isLoading = false;
   var passedData = {};
+  final isHMRCCompleted = localStorage?.getBool('isHMRCCompleted') ?? false;
 
   @override
   void initState() {
@@ -88,7 +90,13 @@ class _HMRCChecklistStartViewState extends State<HMRCChecklistStartView> {
                 ),
               ),
             ),
-            abBottom(top: null),
+            isHMRCCompleted
+                ? abBottom(onTap: (i) async {
+                    if (i == 0) {
+                      Get.to(() => AgreementsView());
+                    }
+                  })
+                : abBottom(top: null),
           ],
         ),
       ),
