@@ -1,0 +1,62 @@
+name: extra_staff
+description: A Banking project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.14.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  get: ^4.1.4
+  mime: ^1.0.0
+  http: ^0.13.3
+  local_auth: ^1.1.6
+  loading_overlay: ^0.3.0
+  image_picker: ^0.8.3+1
+  flutter_signature_pad: ^3.0.0
+  crypto: ^3.0.1
+  shared_preferences: ^2.0.8
+  intl: ^0.17.0
+  dots_indicator: ^2.0.0
+  flutter_keyboard_visibility: ^5.0.3
+  video_player: ^2.2.5
+  pin_code_fields: ^7.3.0
+  geolocator: ^7.7.0
+  flutter_html: ^2.1.5
+  device_info: ^2.0.2
+  file_picker: ^4.3.3
+  url_launcher: ^6.1.5
+  sentry_flutter: ^6.6.3
+  app_tracking_transparency: ^2.0.2+4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lints: ^1.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/images/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: lib/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: lib/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: lib/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: lib/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: lib/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: lib/fonts/Poppins-ExtraLight.ttf
+          weight: 200
