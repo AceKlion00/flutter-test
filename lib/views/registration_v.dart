@@ -225,7 +225,9 @@ class _RegistrationView extends State<RegistrationView> {
                 ),
               ),
               abBottom(onTap: (i) {
-                if (i == 0) {}
+                if (i == 0) {
+                  Get.to(() => Address(), arguments: allData);
+                }
               }),
             ],
           ),
