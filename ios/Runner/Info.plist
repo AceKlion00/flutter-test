@@ -31,8 +31,6 @@
 	<string>$(PRODUCT_NAME) requires to access your camera to upload documents.</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>$(PRODUCT_NAME) requires to authenticate using Face ID.</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>need microphone</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>$(PRODUCT_NAME) requires to access your photo library to upload documents.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
